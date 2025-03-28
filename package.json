@@ -1,0 +1,18 @@
+{
+  "name": "exercicio_gulp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "gulp-javascript-obfuscator": "^1.1.6",
+    "gulp-newer": "^1.4.0",
+    "gulp-webp": "^5.0.0"
+  }
+}
