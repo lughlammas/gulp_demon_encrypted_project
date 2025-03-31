@@ -29,18 +29,18 @@ const comprimeImagens = () => {
 
 const comprimeJavaScript = () => {
     return gulp.src('./source/scripts/*.js')
-        .pipe(uglify())
         .pipe(obfuscator({
             compact: true,
             controlFlowFlattening: true,
             deadCodeInjection: true,
             stringArray: true,
             rotateStringArray: true,
-            stringArrayEncoding: ['base64'], // 👹
+            stringArrayEncoding: ['base64'],
             stringArrayThreshold: 1
         }))
         .pipe(gulp.dest('./build/scripts'));
 };
+
 
 export const sassTask = compilaSass;
 export const images = comprimeImagens;
